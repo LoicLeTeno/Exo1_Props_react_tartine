@@ -1,0 +1,15 @@
+footer {
+    background-color: black;
+
+    padding: 10px 0px;
+}
+
+footer > h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+
+    margin: 0px;
+}

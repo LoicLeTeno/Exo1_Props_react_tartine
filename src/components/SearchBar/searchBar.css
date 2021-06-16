@@ -1,0 +1,35 @@
+.searchBar {
+    display: flex;
+    align-items: center;
+
+    margin-right: 40px;
+}
+
+label {
+    color: white;
+    font-size: 30px;
+
+    margin-right: 10px;
+}
+
+input {
+    font-size: 15px;
+    height: 40px;
+}
+
+.button_search {
+    background-color: turquoise;
+    color: white;
+
+    border: none;
+    border-radius: 15px 15px 15px 15px;
+
+    font-size: 20px;
+
+    height: 40px;
+    width: 60px;
+
+    margin-left: 20px;
+
+    cursor: pointer;
+}

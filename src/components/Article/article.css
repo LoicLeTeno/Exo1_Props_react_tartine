@@ -1,0 +1,30 @@
+.article {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    width: 70%;
+
+    margin: 70px auto;
+}
+
+img {
+    width: 300px;
+    height: auto;
+} 
+
+.para {
+    width: 500px;
+}
+
+.para > h2 {
+    color: greenyellow;
+
+    margin: 0px;
+}
+
+.para > p {
+    color: white;
+
+    margin: 0px;
+}

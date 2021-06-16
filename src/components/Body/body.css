@@ -1,0 +1,15 @@
+body {
+    background-color: rgb(58, 58, 58);
+
+    margin: 0px;
+}
+
+.dommage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: chartreuse;
+
+    margin: 50px 0px;
+}

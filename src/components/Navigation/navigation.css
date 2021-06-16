@@ -1,0 +1,26 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: solid 10px greenyellow;
+}
+
+ul {
+    list-style-type: none;
+
+    display: flex;
+}
+
+li {
+    background-color: transparent;
+    color: white;
+
+    border: solid 3px greenyellow;
+
+    margin: 5px 10px;
+
+    font-size: 30px;
+
+    cursor: pointer;
+}
