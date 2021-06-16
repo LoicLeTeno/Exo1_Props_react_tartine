@@ -8,6 +8,12 @@
     margin: 70px auto;
 }
 
+.tartine {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 img {
     width: 300px;
     height: auto;
@@ -27,4 +33,22 @@ img {
     color: white;
 
     margin: 0px;
+}
+
+.button-article {
+    background-color: wheat;
+    color: brown;
+
+    border: none;
+    border-radius: 15px 15px 15px 15px;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    margin: 10px 0px;
+    padding: 5px;
+
+    width: 50%;
+
+    cursor: pointer;
 }

@@ -13,13 +13,13 @@ class Body extends React.Component {
     render() {
 
         return (
-            <body>
+            <div>
                 <Header />
 
                 {this.nombreArticles >= 2 &&
                     <section>
-                        <Article />
-                        <Article />
+                        <Article titre = "Les tartines"/>
+                        <Article titre = "Coding School"/>
                     </section>
                 }
 
@@ -34,7 +34,7 @@ class Body extends React.Component {
                 <br /><br /><br />
 
                 <Footer />
-            </body>
+            </div>
         );
     }
 }

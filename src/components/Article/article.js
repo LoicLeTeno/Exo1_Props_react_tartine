@@ -6,21 +6,50 @@ class Article extends React.Component {
 
     render() {
 
+        function logTitre(e) {
+            console.log(e);
+        }
+
         return (
-            <div className="article">
-                <div className="tartine">
-                    <img src={logo} alt="logo" />
-                </div>
+            <div>
+                {this.props.titre === "Les tartines" &&
+                    <div className="article">
+                        <div className="tartine">
+                            <img src={logo} alt="logo" />
 
-                <div className="para">
-                    <h2>
-                        Mon premier article
-                    </h2>
+                            <button onClick={() => logTitre(this.props.titre)} className="button-article">Log-Article</button>
+                        </div>
 
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt sint sit dicta. Doloribus repellendus ut sapiente ducimus consectetur dignissimos ipsam consequatur minima placeat sint, accusantium, eveniet odit eos tempore officiis asperiores. Delectus tenetur recusandae sed id autem fugiat suscipit fugit sapiente totam optio corrupti velit maxime non beatae veniam in, ratione soluta accusamus quisquam nemo incidunt consectetur quos magni. Recusandae, nihil sed blanditiis, dolore laboriosam aspernatur similique exercitationem mollitia voluptate eum, id commodi consequatur qui sint voluptatibus atque voluptatem velit totam illum minus beatae unde labore nam autem. Maiores ipsa pariatur nobis unde fugiat deleniti cupiditate dolor adipisci ullam incidunt, numquam ducimus consequatur quidem quia.
-                    </p>
-                </div>
+                        <div className="para">
+                            <h2>
+                                Mon premier article
+                            </h2>
+
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt sint sit dicta. Doloribus repellendus ut sapiente ducimus consectetur dignissimos ipsam consequatur minima placeat sint, accusantium, eveniet odit eos tempore officiis asperiores. Delectus tenetur recusandae sed id autem fugiat suscipit fugit sapiente totam optio corrupti velit maxime non beatae veniam in, ratione soluta accusamus quisquam nemo incidunt consectetur quos magni. Recusandae, nihil sed blanditiis, dolore laboriosam aspernatur similique exercitationem mollitia voluptate eum, id commodi consequatur qui sint voluptatibus atque voluptatem velit totam illum minus beatae unde labore nam autem. Maiores ipsa pariatur nobis unde fugiat deleniti cupiditate dolor adipisci ullam incidunt, numquam ducimus consequatur quidem quia.
+                            </p>
+                        </div>
+                    </div>
+                }
+                {this.props.titre === "Coding School" &&
+                    <div className="article">
+                        <div className="tartine">
+                            <img src={logo} alt="logo" />
+
+                            <button onClick={() => logTitre(this.props.titre)} className="button-article">Log-Article</button>
+                        </div>
+
+                        <div className="para">
+                            <h2>
+                                Mon premier article
+                            </h2>
+
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt sint sit dicta. Doloribus repellendus ut sapiente ducimus consectetur dignissimos ipsam consequatur minima placeat sint, accusantium, eveniet odit eos tempore officiis asperiores. Delectus tenetur recusandae sed id autem fugiat suscipit fugit sapiente totam optio corrupti velit maxime non beatae veniam in, ratione soluta accusamus quisquam nemo incidunt consectetur quos magni. Recusandae, nihil sed blanditiis, dolore laboriosam aspernatur similique exercitationem mollitia voluptate eum, id commodi consequatur qui sint voluptatibus atque voluptatem velit totam illum minus beatae unde labore nam autem. Maiores ipsa pariatur nobis unde fugiat deleniti cupiditate dolor adipisci ullam incidunt, numquam ducimus consequatur quidem quia.
+                            </p>
+                        </div>
+                    </div>
+                }
             </div>
         );
     }
